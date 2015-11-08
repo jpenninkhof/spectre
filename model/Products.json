@@ -1,0 +1,12 @@
+[{
+	"ProductID": 1,
+	"ProductName": "Golf",
+	"SupplierID": 1,
+	"CategoryID": 1
+},
+{
+	"ProductID": 2,
+	"ProductName": "Passat",
+	"SupplierID": 1,
+	"CategoryID": 2
+}]

@@ -1,0 +1,37 @@
+{
+  "dataBinding": {
+    "/view/Master.view.xml": {
+      "entitySet": "Products"
+    },
+    "/view/Detail.view.xml": {
+      "entitySet": "Products"
+    },
+    "/view/NotFound.view.xml": {
+      "entitySet": "UNBINDKEY"
+    },
+    "/view/App.view.xml": {
+      "entitySet": "UNBINDKEY"
+    }
+  },
+  "generation": [
+    {
+      "templateId": "ui5template.fioriMasterDetail",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Sun, 08 Nov 2015 16:17:15 GMT"
+    }
+  ],
+  "mockpreview": {
+    "mockUri": "/destinations/Northwind/",
+    "metadataFilePath": "model/metadata.xml",
+    "loadJSONFiles": true,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  }
+}

@@ -1,2 +1,0 @@
-# spectre
-Innojam Spectre Team

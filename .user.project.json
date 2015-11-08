@@ -1,0 +1,37 @@
+{
+  "run": [
+    {
+      "filePath": "/SpectreSearch/index.html",
+      "previewMode": 0,
+      "dataMode": 0,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "backendSystem": [
+        {
+          "source": "Northwind",
+          "destinations": "Northwind"
+        }
+      ],
+      "_metadata": {
+        "id": 6385115,
+        "runnerId": "webapprunner",
+        "displayName": "Spectre"
+      }
+    }
+  ]
+}
