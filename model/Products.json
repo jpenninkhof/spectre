@@ -2,11 +2,35 @@
 	"ProductID": 1,
 	"ProductName": "Golf",
 	"SupplierID": 1,
-	"CategoryID": 1
+	"CategoryID": 3
 },
 {
 	"ProductID": 2,
 	"ProductName": "Passat",
 	"SupplierID": 1,
+	"CategoryID": 4
+},
+{
+	"ProductID": 3,
+	"ProductName": "Polo",
+	"SupplierID": 1,
 	"CategoryID": 2
+},
+{
+	"ProductID": 4,
+	"ProductName": "Leon",
+	"SupplierID": 3,
+	"CategoryID": 3
+},
+{
+	"ProductID": 5,
+	"ProductName": "Punto",
+	"SupplierID": 5,
+	"CategoryID": 2
+},
+{
+	"ProductID": 6,
+	"ProductName": "Aygo",
+	"SupplierID": 7,
+	"CategoryID": 1
 }]
