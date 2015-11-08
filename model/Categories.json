@@ -1,8 +1,20 @@
 [{
 	"CategoryID": 1,
-	"CategoryName": "Cars C-segment"
+	"CategoryName": "Cars A-segment"
 },
 {
 	"CategoryID": 2,
 	"CategoryName": "Cars B-segment"
+},
+{
+	"CategoryID": 3,
+	"CategoryName": "Cars C-segment"
+},
+{
+	"CategoryID": 4,
+	"CategoryName": "Cars D-segment"
+},
+{
+	"CategoryID": 5,
+	"CategoryName": "Cars E-segment"
 }]

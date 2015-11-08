@@ -5,5 +5,29 @@
 {
 	"SupplierID": 2,
 	"CompanyName": "Audi"
+},
+{
+		"SupplierID": 3,
+	"CompanyName": "Seat"
+},
+{
+		"SupplierID": 4,
+	"CompanyName": "Skoda"
+},
+{
+		"SupplierID": 5,
+	"CompanyName": "Fiat"
+},
+{
+		"SupplierID": 6,
+	"CompanyName": "Alfa Romeo"
+},
+{
+		"SupplierID": 7,
+	"CompanyName": "Toyota"
+},
+{
+		"SupplierID": 8,
+	"CompanyName": "Suzuki"
 }
 ]
