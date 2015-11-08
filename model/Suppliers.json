@@ -4,5 +4,11 @@
 },
 {
 	"SupplierID": 2,
+<<<<<<< HEAD
 	"CompanyName": "Fiat"
 }]
+=======
+	"CompanyName": "Audi"
+}
+]
+>>>>>>> branch 'master' of https://github.com/jpenninkhof/spectre.git
