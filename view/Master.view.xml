@@ -13,7 +13,7 @@
 			<List growing="true" growingScrollToLoad="true" id="list" items="{/Products}" mode="{device>/listMode}"
 				noDataText="{i18n>masterListNoDataText}" select="onSelect">
 				<items id="masterList">
-					<ObjectListItem counter="0" id="mainListItem" markFavorite="false" markFlagged="false" number="{ProductID}" numberUnit="" press="onSelect"
+					<ObjectListItem counter="0" id="mainListItem" markFavorite="false" markFlagged="false" number="" numberUnit="" press="onSelect"
 						showMarkers="false" title="{ProductName}" type="{device>/listItemType}">
 						<core:ExtensionPoint name="extListItemInfo"/>
 					</ObjectListItem>

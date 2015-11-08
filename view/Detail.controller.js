@@ -41,22 +41,6 @@ sap.ui.core.mvc.Controller.extend("com.james.spectre.search.view.Detail", {
 			var sEntityPath = "/" + oParameters.arguments.entity;
 			this.bindView(sEntityPath);
 
-			var oIconTabBar = oView.byId("idIconTabBar");
-			oIconTabBar.getItems().forEach(function(oItem) {
-				if (oItem.getKey() !== "selfInfo") {
-					oItem.bindElement(oItem.getKey());
-				}
-			});
-
-			// Specify the tab being focused
-			var sTabKey = oParameters.arguments.tab;
-			this.getEventBus().publish("Detail", "TabChanged", {
-				sTabKey: sTabKey
-			});
-
-			if (oIconTabBar.getSelectedKey() !== sTabKey) {
-				oIconTabBar.setSelectedKey(sTabKey);
-			}
 		}, this));
 
 	},
