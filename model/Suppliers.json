@@ -1,4 +1,9 @@
 [{
 	"SupplierID": 1,
 	"CompanyName": "Volkswagen"
-}]
+},
+{
+	"SupplierID": 2,
+	"CompanyName": "Audi"
+}
+]
