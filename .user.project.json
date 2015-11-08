@@ -3,6 +3,7 @@
     {
       "filePath": "/spectre/index.html",
       "previewMode": 1,
+<<<<<<< HEAD
       "dataMode": 1,
       "workspace": "withoutWorkspace",
       "ui5ActiveVersion": null,
@@ -25,6 +26,8 @@
     {
       "filePath": "/SpectreSearch/index.html",
       "previewMode": 0,
+=======
+>>>>>>> branch 'master' of https://github.com/jpenninkhof/spectre
       "dataMode": 0,
       "workspace": "withoutWorkspace",
       "ui5ActiveVersion": null,
