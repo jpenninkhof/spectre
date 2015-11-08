@@ -1,8 +1,8 @@
 {
   "run": [
     {
-      "filePath": "/SpectreSearch/index.html",
-      "previewMode": 0,
+      "filePath": "/spectre/index.html",
+      "previewMode": 1,
       "dataMode": 0,
       "workspace": "withoutWorkspace",
       "ui5ActiveVersion": null,
