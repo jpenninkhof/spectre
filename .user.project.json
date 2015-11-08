@@ -2,28 +2,6 @@
   "run": [
     {
       "filePath": "/spectre/index.html",
-      "previewMode": 1,
-      "dataMode": 1,
-      "workspace": "withoutWorkspace",
-      "ui5ActiveVersion": null,
-      "ui5VerSource": null,
-      "isDefaultVersion": 0,
-      "urlParameters": [],
-      "hashParameter": "",
-      "backendSystem": [
-        {
-          "source": "Northwind",
-          "destinations": "Northwind"
-        }
-      ],
-      "_metadata": {
-        "runnerId": "webapprunner",
-        "id": 232343,
-        "displayName": "Spectre"
-      }
-    },
-    {
-      "filePath": "/SpectreSearch/index.html",
       "previewMode": 0,
       "dataMode": 0,
       "workspace": "withoutWorkspace",
