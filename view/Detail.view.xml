@@ -1,6 +1,6 @@
 <mvc:View controllerName="com.james.spectre.search.view.Detail" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
 	xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-	<Page id="detailPage" navButtonPress="onNavBack" showNavButton="{device>/isPhone}" title="{i18n>detailTitle}">
+	<Page showHeader="false" id="detailPage" navButtonPress="onNavBack" showNavButton="{device>/isPhone}" title="{i18n>detailTitle}">
 		<content>
 		
 			<ObjectHeader iconActive="false" id="detailHeader" introActive="false" number="" numberUnit="" title="{ProductName}"
@@ -13,29 +13,55 @@
 				</firstStatus>
 			</ObjectHeader>
 			
-			<f:SimpleForm columnsL="1" editable="false" emptySpanL="4" emptySpanM="4" id="iconTabFilter1form" labelSpanL="3" labelSpanM="3"
-				layout="ResponsiveGridLayout" minWidth="1024">
-				<f:content>
-					<Label id="label1" text="ProductName"></Label>
-					<Text id="text1" maxLines="0" text="{ProductName}"></Text>
-					<Label id="label2" text="ProductID"></Label>
-					<Text id="text2" maxLines="0" text="{ProductID}"></Text>
-					<Label id="label3" text=""></Label>
-					<Text id="text3" maxLines="0" text=""></Text>
-					<core:ExtensionPoint name="extIconTabFilterForm1"/>
-				</f:content>
-			</f:SimpleForm>
-			
-			<Image src="images/{ProductID}.jpg" width="100%" />
+			<Panel headerText="Details">
+				<f:SimpleForm 
+					columnsL="1" 
+					editable="false" 
+					emptySpanL="4" 
+					emptySpanM="4" 
+					labelSpanL="3" 
+					labelSpanM="3"
+					layout="ResponsiveGridLayout" minWidth="1024">
+					<f:content>
+						<Label id="label1" text="ProductName"></Label>
+						<Text id="text1" maxLines="0" text="{ProductName}"></Text>
+						<Label id="label2" text="ProductID"></Label>
+						<Text id="text2" maxLines="0" text="{ProductID}"></Text>
+						<Label id="label3" text="Rating"></Label>
+						<Text id="text3" maxLines="0" text="{ProductionRating}"></Text>
+					</f:content>
+				</f:SimpleForm>
+			</Panel>
+
+			<Panel headerText="Rating" width="100%">
+				<FlexBox width="100%"
+					alignItems="Center"
+					justifyContent="Center">
+					<items>
+						<Image src="images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 0 }" />
+						<Image src="images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 1 }" />
+						<Image src="images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 2 }" />
+						<Image src="images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 3 }" />
+						<Image src="images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 4 }" />
+					</items>
+				</FlexBox>
+			</Panel>
+
+			<Panel headerText="Your turn" width="100%">
+				<FlexBox width="100%"
+					alignItems="Center"
+					justifyContent="Center">
+					<items>
+						<Button text="Compare" icon="sap-icon://compare-2" class="sapUiResponsiveMargin" />
+						<Button text="Share" icon="sap-icon://share-2" class="sapUiResponsiveMargin" />
+					</items>
+				</FlexBox>
+			</Panel>
+
+			<Panel headerText="{ProductName} Gallery">
+				<Image src="images/{ProductID}.jpg" width="100%" />
+			</Panel>
 
 		</content>
-		<footer id="detailFooter">
-			<Toolbar id="detailToolbar">
-				<content>
-					<ToolbarSpacer id="toolbarSpacer"></ToolbarSpacer>
-					<Button icon="sap-icon://action" id="actionButton" press="openActionSheet"></Button>
-				</content>
-			</Toolbar>
-		</footer>
 	</Page>
 </mvc:View>
