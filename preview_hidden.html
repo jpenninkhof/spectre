@@ -14,22 +14,6 @@
 			data-sap-ui-xx-bindingSyntax="complex"
 			data-sap-ui-resourceroots='{"com.james.spectre.search": "./"}'>
 		</script>
-<script>
-var bRunWithMock = true;
-var sRunWithMock = jQuery.sap.getUriParameters().get('run-with-mock');
-if (sRunWithMock === 'false') {
-bRunWithMock = false;
-}
-if (bRunWithMock) {
-jQuery.sap.require('sap.ui.core.util.MockServer');
-var uri = '/destinations/Northwind/';
-var oMock = new sap.ui.core.util.MockServer({rootUri : uri});
-oMock.simulate('model/metadata.xml', { sMockdataBaseUrl : 'model/', bGenerateMissingMockData : true });
-oMock.start();
-	jQuery(document).ready(function($) {  sap.m.MessageToast.show('Running in demo mode with mock data.', {  duration : 4000 });
-});
-}
-</script>
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -43,7 +27,7 @@ oMock.start();
 				}).placeAt("content");
 			});
 		</script>
-	<script src='https://webide-p508741trial.dispatcher.hanatrial.ondemand.com/plugins/pluginrepository/hybrid/cordovafacade/cordova.js' data-original-url='mock_preview_sapui5.html'></script>
+	<script src='https://webide-p508741trial.dispatcher.hanatrial.ondemand.com/plugins/pluginrepository/hybrid/cordovafacade/cordova.js' data-original-url='index.html'></script>
 <style>#interactive.viewport video{width:320px;height:240px;}
 #interactive.viewport .drawingBuffer{width:320px;height:240px;position:absolute;}</style></head>
 

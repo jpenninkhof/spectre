@@ -3,7 +3,7 @@
 	<Page showHeader="false" id="detailPage" navButtonPress="onNavBack" showNavButton="{device>/isPhone}" title="{i18n>detailTitle}">
 		<content>
 		
-			<ObjectHeader iconActive="false" id="detailHeader" introActive="false" number="" numberUnit="" title="{ProductName}"
+			<ObjectHeader iconActive="false" id="detailHeader" introActive="false" number="" numberUnit="" title="{Name}"
 				titleActive="false">
 				<attributes id="detailAttributes">
 					<ObjectAttribute active="false" id="attribute" text="{i18n>detailText}"></ObjectAttribute>
@@ -24,16 +24,16 @@
 					layout="ResponsiveGridLayout" minWidth="1024">
 					<f:content>
 						<Label id="label1" text="ProductName"></Label>
-						<Text id="text1" maxLines="0" text="{ProductName}"></Text>
+						<Text id="text1" maxLines="0" text="{Name}"></Text>
 						<Label id="label2" text="ProductID"></Label>
-						<Text id="text2" maxLines="0" text="{ProductID}"></Text>
+						<Text id="text2" maxLines="0" text="{Id}"></Text>
 						<Label id="label3" text="Rating"></Label>
 						<Text id="text3" maxLines="0" text="{ProductionRating}"></Text>
 					</f:content>
 				</f:SimpleForm>
 			</Panel>
 
-			<Panel headerText="Rating" width="100%">
+			<Panel headerText="Is it any good?" width="100%">
 				<FlexBox width="100%"
 					alignItems="Center"
 					justifyContent="Center">
@@ -53,13 +53,13 @@
 					justifyContent="Center">
 					<items>
 						<Button text="Compare" icon="sap-icon://compare-2" class="sapUiResponsiveMargin" />
-						<Button text="Share" icon="sap-icon://share-2" class="sapUiResponsiveMargin" />
+						<Button text="Share" icon="sap-icon://share-2" class="sapUiResponsiveMargin" press="onSharePress" />
 					</items>
 				</FlexBox>
 			</Panel>
 
-			<Panel headerText="{ProductName} Gallery">
-				<Image src="images/{ProductID}.jpg" width="100%" />
+			<Panel headerText="{Name} Gallery">
+				<Image src="images/{Id}.jpg" width="100%" />
 			</Panel>
 
 		</content>

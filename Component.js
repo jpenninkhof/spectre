@@ -17,7 +17,7 @@ sap.ui.core.UIComponent.extend("com.james.spectre.search.Component", {
 			resourceBundle: "i18n/messageBundle.properties",
 			serviceConfig: {
 				name: "NorthwindModel",
-				serviceUrl: "/destinations/Northwind/"
+				serviceUrl: "/destinations/Spectre/SpectreService.svc/"
 			}
 		},
 

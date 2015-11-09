@@ -17,7 +17,7 @@
 				noDataText="{i18n>masterListNoDataText}" select="onSelect">
 				<items id="masterList">
 					<ObjectListItem counter="0" id="mainListItem" markFavorite="false" markFlagged="false" number="" numberUnit="" press="onSelect"
-						showMarkers="false" title="{ProductName}" type="{device>/listItemType}">
+						showMarkers="false" title="{Name}" type="{device>/listItemType}">
 						<core:ExtensionPoint name="extListItemInfo"/>
 					</ObjectListItem>
 				</items>

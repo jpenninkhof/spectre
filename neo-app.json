@@ -2,12 +2,12 @@
   "welcomeFile": "index.html",
   "routes": [
     {
-      "path": "/destinations/Northwind",
+      "path": "/destinations/Spectre",
       "target": {
         "type": "destination",
-        "name": "Northwind"
+        "name": "Spectre"
       },
-      "description": "Northwind oData service"
+      "description": "Spectre oData service"
     },
     {
       "path": "/resources",

@@ -120,6 +120,10 @@ sap.ui.core.mvc.Controller.extend("com.james.spectre.search.view.Detail", {
 		return sap.ui.core.UIComponent.getRouterFor(this);
 	},
 
+	onSharePress: function() {
+		
+	},
+
 	onExit: function(oEvent) {
 		var oEventBus = this.getEventBus();
 		oEventBus.unsubscribe("Master", "InitialLoadFinished", this.onMasterLoaded, this);
