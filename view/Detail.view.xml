@@ -38,11 +38,11 @@
 					alignItems="Center"
 					justifyContent="Center">
 					<items>
-						<Image src="images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 0 }" />
-						<Image src="images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 1 }" />
-						<Image src="images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 2 }" />
-						<Image src="images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 3 }" />
-						<Image src="images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 4 }" />
+						<Image src="/images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 0 }" />
+						<Image src="/images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 1 }" />
+						<Image src="/images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 2 }" />
+						<Image src="/images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 3 }" />
+						<Image src="/images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 4 }" />
 					</items>
 				</FlexBox>
 			</Panel>
@@ -59,7 +59,7 @@
 			</Panel>
 
 			<Panel headerText="{Name} Gallery">
-				<Image src="images/{Id}.jpg" width="100%" />
+				<Image src="/images/{Id}.jpg" width="100%" />
 			</Panel>
 
 		</content>

@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "spectresearch",
+        "description": "Spectre Search",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#spectresearch-Display",
+        "navigationComponentName": "com.james.spectre.search",
+        "intentSemanticObject": "",
+        "intentAction": "",
+        "html5ApplicationName": "spectresearch",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "030fcb43-c82f-4992-9dc0-8c7a1140d80f-1447006346865"
+        ],
+        "contentPackages": [
+            "a80bceaf-10c2-4ced-b090-49206595ed12-1447006320984"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Search",
+        "subtitle": "",
+        "searchKeywords": "Search,",
+        "displayIconUrl": "sap-icon://search",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}
