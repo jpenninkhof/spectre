@@ -101,6 +101,14 @@ sap.ui.core.UIComponent.extend("com.james.spectre.search.Component", {
 		oDeviceModel.setDefaultBindingMode("OneWay");
 		this.setModel(oDeviceModel, "device");
 
+		// Create value list model
+		var valueLists = new sap.ui.model.json.JSONModel();
+		this.setModel(valueLists, "values");
+		jQuery.sap.delayedCall(0, this, function () {
+			this.loadValueList("/Suppliers");
+			this.loadValueList("/Categories");
+		});
+
 		this.getRouter().initialize();
 	},
 
@@ -123,6 +131,35 @@ sap.ui.core.UIComponent.extend("com.james.spectre.search.Component", {
 		});
 	},
 
+	loadValueList: function(listId, async) {
+		if (typeof(async) === "undefined") { async = true; }
+		var list = this.getModel("values").getProperty(listId);
+		if (!list) {
+			var that = this;
+			this.getModel().read(
+					listId,
+					null, null, async,
+					function(data) { 
+						that.getModel("values").setProperty(listId, data.results);
+					}
+				);
+		}
+	},
+	
+	getValue: function(key, valueListName, keyName, valueName) {
+		this.loadValueList(valueListName, false);
+		var valueList = this.getModel("values").getProperty(valueListName);
+		var entity = valueList.find(function(ele) { 
+			if (ele[keyName] === key) { 
+				return ele; 
+			}});
+		if (typeof(valueName) === "undefined") {
+			return entity;
+		} else {
+			return entity ? entity[valueName] : "-";
+		}
+	},
+	
 	getEventBus: function() {
 		return sap.ui.getCore().getEventBus();
 	}

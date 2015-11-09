@@ -3,7 +3,7 @@
 	<Page showHeader="false" id="detailPage" navButtonPress="onNavBack" showNavButton="{device>/isPhone}" title="{i18n>detailTitle}">
 		<content>
 		
-			<ObjectHeader iconActive="false" id="detailHeader" introActive="false" number="" numberUnit="" title="{Name}"
+			<ObjectHeader icon="sap-icon://car-rental" iconActive="true" id="detailHeader" introActive="false" number="" numberUnit="" title="{path: 'SupplierId', formatter:'.formatter.supplier'} {Name}"
 				titleActive="false">
 				<attributes id="detailAttributes">
 					<ObjectAttribute active="false" id="attribute" text="{i18n>detailText}"></ObjectAttribute>
@@ -23,12 +23,20 @@
 					labelSpanM="3"
 					layout="ResponsiveGridLayout" minWidth="1024">
 					<f:content>
-						<Label id="label1" text="ProductName"></Label>
-						<Text id="text1" maxLines="0" text="{Name}"></Text>
-						<Label id="label2" text="ProductID"></Label>
-						<Text id="text2" maxLines="0" text="{Id}"></Text>
-						<Label id="label3" text="Rating"></Label>
-						<Text id="text3" maxLines="0" text="{ProductionRating}"></Text>
+						<Label text="ProductName"></Label>
+						<Text maxLines="0" text="{Name}"></Text>
+						<Label text="Supplier"></Label>
+						<Text maxLines="0" text="{path: 'SupplierId', formatter:'.formatter.supplier'}"></Text>
+						<Label text="Rating"></Label>
+						<Text maxLines="0" text="{path: 'CategoryId', formatter:'.formatter.category'}"></Text>
+						<Label text="Consumption Usage"></Label>
+						<Text maxLines="0" text="{ConsumptionUsage}"></Text>
+						<Label text="Consumption Rating"></Label>
+						<Text maxLines="0" text="{ConsumptionRating}"></Text>
+						<Label text="Production Usage"></Label>
+						<Text maxLines="0" text="{ProductionUsage}"></Text>
+						<Label text="Production Rating"></Label>
+						<Text maxLines="0" text="{ProductionRating}"></Text>
 					</f:content>
 				</f:SimpleForm>
 			</Panel>
@@ -38,11 +46,11 @@
 					alignItems="Center"
 					justifyContent="Center">
 					<items>
-						<Image src="/images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 0 }" />
-						<Image src="/images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 1 }" />
-						<Image src="/images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 2 }" />
-						<Image src="/images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 3 }" />
-						<Image src="/images/GreenEarth.png" width="10%" visible="{= ${ProductionRating} > 4 }" />
+						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 0 }" />
+						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 1 }" />
+						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 2 }" />
+						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 3 }" />
+						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 4 }" />
 					</items>
 				</FlexBox>
 			</Panel>
