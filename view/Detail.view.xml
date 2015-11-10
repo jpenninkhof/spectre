@@ -3,7 +3,7 @@
 	<Page showHeader="false" id="detailPage" navButtonPress="onNavBack" showNavButton="{device>/isPhone}" title="{i18n>detailTitle}">
 		<content>
 		
-			<ObjectHeader icon="sap-icon://car-rental" iconActive="true" id="detailHeader" introActive="false" number="" numberUnit="" title="{path: 'SupplierId', formatter:'.formatter.supplier'} {Name}"
+			<ObjectHeader icon="sap-icon://car-rental" iconActive="true" introActive="false" number="" numberUnit="" title="{path: 'SupplierId', formatter:'.formatter.supplier'} {Name}"
 				titleActive="false">
 				<attributes id="detailAttributes">
 					<ObjectAttribute active="false" id="attribute" text="{i18n>detailText}"></ObjectAttribute>
@@ -41,7 +41,7 @@
 				</f:SimpleForm>
 			</Panel>
 
-			<Panel headerText="Is it any good?" width="100%">
+			<Panel headerText="How green was production" width="100%">
 				<FlexBox width="100%"
 					alignItems="Center"
 					justifyContent="Center">
@@ -51,6 +51,16 @@
 						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 2 }" />
 						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 3 }" />
 						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 4 }" />
+					</items>
+				</FlexBox>
+			</Panel>
+
+			<Panel headerText="Consumption rating" width="100%">
+				<FlexBox width="100%"
+					alignItems="Center"
+					justifyContent="Center">
+					<items>
+						<Image src="/images/el{Id}.png" width="100%" />
 					</items>
 				</FlexBox>
 			</Panel>
