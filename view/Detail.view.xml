@@ -46,11 +46,7 @@
 					alignItems="Center"
 					justifyContent="Center">
 					<items>
-						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 0 }" />
-						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 1 }" />
-						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 2 }" />
-						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 3 }" />
-						<Image src="/images/GreenEarth.png" width="20%" visible="{= ${ProductionRating} > 4 }" />
+						<Image src="/images/green_{ProductionRating}.png" width="100%"/>
 					</items>
 				</FlexBox>
 			</Panel>
@@ -70,7 +66,7 @@
 					alignItems="Center"
 					justifyContent="Center">
 					<items>
-						<Button text="Compare" icon="sap-icon://compare-2" class="sapUiResponsiveMargin" />
+						<Button text="Compare" icon="sap-icon://compare-2" class="sapUiResponsiveMargin sapUiSmallMarginEnd" />
 						<Button text="Share" icon="sap-icon://share-2" class="sapUiResponsiveMargin" press="onSharePress" />
 					</items>
 				</FlexBox>
